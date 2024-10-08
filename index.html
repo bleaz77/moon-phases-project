@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Moon Phases</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <section class="bg-gradient-to-b from-gray-900 to-black py-20">
+    <div class="container mx-auto text-center">
+        <h1 class="text-white text-6xl font-bold mb-4 shadow-lg">Her Phases Through Time</h1>
+        <p class="text-gray-300 text-xl mb-12">From her first steps to now, like the moon, she's always shining brighter.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+            <!-- New Moon (Baby Phase) -->
+            <div class="group relative rounded-[10px] overflow-hidden shadow-lg">
+                <img src="moon/1.jpg" alt="New Moon" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105 rounded-[10px]">
+                <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[10px]">
+                    <div class="text-center">
+                        <img src="img/WhatsApp Image 2024-10-08 at 00.37.37_5709b62f.jpg" alt="Baby Photo" class="rounded-full mb-4 w-32 h-32">
+                        <p class="text-white text-lg font-semibold">New Moon: A beautiful beginning</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Waxing Crescent (Childhood Phase) -->
+            <div class="group relative rounded-[10px] overflow-hidden shadow-lg">
+                <img src="moon/2.jpg" alt="Waxing Crescent" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105 rounded-[10px]">
+                <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[10px]">
+                    <div class="text-center">
+                        <img src="img/Snapchat-1641342488.jpg" alt="Childhood Photo" class="rounded-full mb-4 w-32 h-32">
+                        <p class="text-white text-lg font-semibold">Waxing Crescent: Growing with wonder</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First Quarter (Teenage Phase) -->
+            <div class="group relative rounded-[10px] overflow-hidden shadow-lg">
+                <img src="moon/3.jpg" alt="First Quarter" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105 rounded-[10px]">
+                <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[10px]">
+                    <div class="text-center">
+                        <img src="img/WhatsApp Image 2024-10-08 at 00.53.12_2c8c4344.jpg" alt="Teenage Photo" class="rounded-full mb-4 w-32 h-32">
+                        <p class="text-white text-lg font-semibold">First Quarter: Finding her own path</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Moon (Present Day) -->
+            <div class="group relative rounded-[10px] overflow-hidden shadow-lg border-4 border-yellow-500">
+                <img src="moon/4.jpg" alt="Full Moon" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105 rounded-[10px]">
+                <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[10px]">
+                    <div class="text-center">
+                        <img src="img/WhatsApp Image 2024-10-08 at 00.42.47_cf62aa51.jpg" alt="Present Day Photo" class="rounded-full mb-4 w-32 h-32 border-2 border-yellow-400">
+                        <p class="text-yellow-400 text-lg font-semibold">Full Moon: Radiant, complete, and beautiful</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="myModal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="modal-content bg-gray-900 rounded-lg p-5 text-center">
+                <span class="close text-gray-400 hover:text-white cursor-pointer text-2xl">&times;</span>
+                <h2 class="text-3xl font-bold text-yellow-400 mb-4">Message for You!</h2>
+                <p class="text-gray-300 text-lg">You are the moonlight that brightens my life, the stars that sparkle in my eyes. You mean the world to me, and I am so grateful to have you by my side. I love you more than words can express. Thank you for being such a beautiful part of my life.</p>
+                <img src="img/WhatsApp Image 2024-10-08 at 02.02.06_7fcfdafe.jpg" alt="Special Image" class="w-full h-auto object-cover rounded-md mt-4 shadow-lg">
+            </div>
+        </div>
+
+        <!-- Button to Open Modal -->
+        <div class="mt-16 flex justify-center">
+            <button id="openModal" class="text-yellow-400 font-bold py-3 px-6 rounded-full bg-gray-800 hover:bg-yellow-500 hover:text-gray-800 transition-colors">Open Special Message</button>
+        </div>
+
+        <!-- Audio element with loop attribute -->
+        <audio id="backgroundMusic" src="music/I just wanna be yours.mp3" preload="auto" loop></audio>
+    </div>
+</section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

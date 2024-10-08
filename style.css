@@ -1,0 +1,49 @@
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+}
+
+.modal-content {
+    background-color: #1a202c; /* Darker background */
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border-radius: 15px; /* More rounded corners */
+    width: 90%; /* Adjust this as necessary */
+    max-width: 600px; /* Set a max width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+
+/* Close button styles */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white; /* Change color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Title and paragraph styles */
+h2 {
+    color: #FBBF24; /* Yellow color for the title */
+}
+
+p {
+    color: #E2E8F0; /* Light gray for the text */
+    font-family: 'YourChosenFont', sans-serif; /* Ensure the font family is applied here as well */
+}
+
